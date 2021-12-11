@@ -105,3 +105,12 @@ nnoremap <Leader>bfs :lua require'telescope.builtin'.find_files{}<CR>
 
 " ripgrep like grep through dir
 nnoremap <Leader>rg :lua require'telescope.builtin'.live_grep{}<CR>
+
+nnoremap gp :silent %!prettier --stdin-filepath %<CR>
+
+
+
+" git 
+nmap <leader>gh :diffget
+nmap <leader>gu :diffget
+nmap <leader>gs :G<CR>
