@@ -9,6 +9,11 @@ Plug 'tpope/vim-rhubarb'
 Plug 'cohama/lexima.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'mhinz/vim-rfc'
+Plug 'mbbill/undotree'
+Plug 'ThePrimeagen/harpoon'
+Plug 'ThePrimeagen/git-worktree.nvim'
 
 if has("nvim")
     Plug 'hoob3rt/lualine.nvim'

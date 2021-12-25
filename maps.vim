@@ -102,6 +102,7 @@ nnoremap <Leader>f :lua require'telescope.builtin'.git_files{}<CR>
 
 " all files
 nnoremap <Leader>bfs :lua require'telescope.builtin'.find_files{}<CR>
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files({ hidden = true })<cr>
 
 " ripgrep like grep through dir
 nnoremap <Leader>rg :lua require'telescope.builtin'.live_grep{}<CR>
@@ -114,3 +115,15 @@ nnoremap gp :silent %!prettier --stdin-filepath %<CR>
 nmap <leader>gh :diffget
 nmap <leader>gu :diffget
 nmap <leader>gs :G<CR>
+
+"Greatest remap ever
+vnoremap <leader>p "_dP
+
+"Next greatest remap ever : asbjornHaland
+noremap <leader>y "+y
+vnoremap <leader>y "+y
+
+vnoremap <leader>d "_d
+noremap <leader>d "_d
+noremap <leader>x "_x
+nnoremap Y y$
